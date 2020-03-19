@@ -15,12 +15,11 @@ function karlDamage(playerChoice) {
   karl.health = newKarlHealth
   console.log(karl.health)
   document.getElementById("healthBar").style.width = karl.health + "%"
-  if (karl.health <= 50){
+  if (karl.health <= 50) {
     document.getElementById("btn-wet-willy").classList.remove("hidden")
   }
   if (karl.health <= 0) {
     document.getElementById("healthBar").style.width = "0%"
     document.getElementById("karl-img").src = "https://upload.wikimedia.org/wikipedia/commons/9/91/Karlmarxtomb.jpg"
-
   }
 }
